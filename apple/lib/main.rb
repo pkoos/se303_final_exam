@@ -2,14 +2,6 @@
 # To cure it, apply "extract function".
 
 def story
-  first1234 = "Mr. Dursley was the director of a firm called Grunnings, which made drills."
-  middle1234 = ""
-  middle1234 << "\n"
-  middle1234 << "\n"
-  middle1234 << "\n"
-  middle1234 << "\n"
-  middle1234 << "\n"
-  conclusion1234 = "And that was it."
   first + middle + conclusion
 end
 
