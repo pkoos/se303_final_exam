@@ -3,12 +3,12 @@
 
 def story
   first1234 = "Mr. Dursley was the director of a firm called Grunnings, which made drills."
-  middle = ""
-  middle << "\n"
-  middle << "\n"
-  middle << "\n"
-  middle << "\n"
-  middle << "\n"
+  middle1234 = ""
+  middle1234 << "\n"
+  middle1234 << "\n"
+  middle1234 << "\n"
+  middle1234 << "\n"
+  middle1234 << "\n"
   conclusion = "And that was it."
   first + middle + conclusion
 end
