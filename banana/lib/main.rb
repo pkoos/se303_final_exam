@@ -5,9 +5,6 @@
 
 def word_count(beginning, middle, conclusion)
 	Sentence.new(beginning, middle, conclusion).word_count
-  beginning.split.size +
-  middle.split.size +
-  conclusion.split.size
 end
 
 def letter_count(beginning, middle, conclusion)
