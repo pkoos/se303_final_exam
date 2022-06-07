@@ -20,3 +20,7 @@ end
 def middle
 	"\n\n\n\n\n"
 end
+
+def conclusion
+	"And that was it."
+end
