@@ -16,3 +16,7 @@ end
 def first
 	"Mr. Dursley was the director of a firm called Grunnings, which made drills."
 end
+
+def middle
+	"\n\n\n\n\n"
+end
