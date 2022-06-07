@@ -35,3 +35,11 @@ class Farm
   end
 
 end
+
+class Plant
+	attr_reader :name, :height
+	def initialize(name, height)
+		@name = name
+		@height = height
+	end
+end
