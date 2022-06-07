@@ -18,7 +18,7 @@ class Farm
     beet_2 = ["Deep Darkness", 1]
     # Plots have a name and some plants
     plot_a = ["Plot A", ["Sugar Baby", 3], ["Red Boomer", 1], ["Plump Pucker", 1]]
-    plot_b = ["Plot B", cucumber, tomato, beet_1, beet_2]
+    plot_b = ["Plot B", ["Green Lady", 2], ["Dark Plump", 2], ["Rainbow", 1], ["Deep Darkness", 1]]
     @plots = [plot_a, plot_b]
   end
 
