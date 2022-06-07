@@ -27,5 +27,6 @@ def repeat
     # result += data[i]
   # end
   # result
-	["This", "is", "the", "data", "to", "use"].join
+	# ["This", "is", "the", "data", "to", "use"].join
+	"Thisisthedatatouse"
 end
