@@ -20,5 +20,10 @@ def period_count(beginning, middle, conclusion)
 end
 
 class Sentence
-
+	attr_reader :beginning, :middle, :conclusion
+	def initialize(beginning, middle, conclusion)
+		@beginning = beginning
+		@middle = middle
+		@conclusion = conclusion
+	end
 end
