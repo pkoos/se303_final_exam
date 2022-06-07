@@ -19,15 +19,12 @@ class Farm
   end
 
   def total_number_of_plants
-		total = 0
-    plots.each { |plot| total += (plot.total_number_of_plants) }
-		total
+		plots.sum { |plot| plot.total_number_of_plants }
   end
 
   def total_plant_heights
-    total = 0
-    plots.each { |plot| total += plot.total_plant_heights }
-    total
+
+		plots.sum { |plot| plot.total_plant_heights}
   end
 
 end
@@ -52,8 +49,6 @@ class Plot
 	end
 
 	def total_plant_heights
-		total = 0
-		plants.each { |plant| total += plant.height }
-		total
+		plants.sum { |plant| plant.height}
 	end
 end
