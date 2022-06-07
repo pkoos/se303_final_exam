@@ -21,10 +21,11 @@ end
 # Apply the "replace loop with pipeline" refactoring.
 
 def repeat
-  data = ["This", "is", "the", "data", "to", "use"]
-  result = data.join
+  # data = ["This", "is", "the", "data", "to", "use"]
+  # result = data.join
   # (0..5).each do |i|
     # result += data[i]
   # end
-  result
+  # result
+	["This", "is", "the", "data", "to", "use"].join
 end
