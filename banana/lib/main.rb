@@ -26,4 +26,10 @@ class Sentence
 		@middle = middle
 		@conclusion = conclusion
 	end
+
+	def word_count
+		beginning.split.size + 
+		middle.split.size +
+		conclusion.split.size
+	end
 end
