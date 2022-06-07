@@ -45,3 +45,10 @@ class Plant
 		@height = height
 	end
 end
+
+class Plot
+	attr_reader :plants
+	def initialize(plants)
+		@plants = plants
+	end
+end
