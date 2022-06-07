@@ -9,6 +9,7 @@ class Farm
 
   def initialize
     # Plots have a name and some plants
+		plot_a = [Plant.new('Sugar Baby', 3), Plant.new('Red Boomer', 1), Plant.new('Plump Pucker', 1)]
     plot_a = ["Plot A", ["Sugar Baby", 3], ["Red Boomer", 1], ["Plump Pucker", 1]]
     plot_b = ["Plot B", ["Green Lady", 2], ["Dark Plump", 2], ["Rainbow", 1], ["Deep Darkness", 1]]
     @plots = [plot_a, plot_b]
