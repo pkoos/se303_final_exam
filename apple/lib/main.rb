@@ -9,7 +9,7 @@ def story
   middle1234 << "\n"
   middle1234 << "\n"
   middle1234 << "\n"
-  conclusion = "And that was it."
+  conclusion1234 = "And that was it."
   first + middle + conclusion
 end
 
