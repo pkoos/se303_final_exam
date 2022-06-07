@@ -12,9 +12,7 @@ def letter_count(beginning, middle, conclusion)
 end
 
 def period_count(beginning, middle, conclusion)
-  beginning.scan(/\./).size +
-  middle.scan(/\./).size +
-  conclusion.scan(/\./).size
+	Sentence.new(beginning, middle, conclusion).period_count
 end
 
 class Sentence
@@ -35,5 +33,11 @@ class Sentence
 		beginning.size + 
 		middle.size + 
 		conclusion.size
+	end
+
+	def period_count
+		beginning.scan(/\./).size +
+		middle.scan(/\./).size +
+		conclusion.scan(/\./).size
 	end
 end
