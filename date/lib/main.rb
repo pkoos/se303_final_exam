@@ -9,11 +9,11 @@ class Farm
 
   def initialize
     # Plots have a name and some plants
-    plot_a = Plot.new([Plant.new('Sugar Baby', 3), Plant.new('Red Boomer', 1), Plant.new('Plump Pucker', 1)])
-		plot_a = ["Plot A", ["Sugar Baby", 3], ["Red Boomer", 1], ["Plump Pucker", 1]]
+    plot_a = Plot.new('Plot A', [Plant.new('Sugar Baby', 3), Plant.new('Red Boomer', 1), Plant.new('Plump Pucker', 1)])
+		plot_b = Plot.new('Plot B', [Plant.new('Green Lady', 2), Plant.new('Dark Plump', 2), Plant.new('Rainbow', 1), Plant.new('Deep Darkness', 1)])
 
-		plot_b = Plot.new([Plant.new('Green Lady', 2), Plant.new('Dark Plump', 2), Plant.new('Rainbow', 1), Plant.new('Deep Darkness', 1)])
-    plot_b = ["Plot B", ["Green Lady", 2], ["Dark Plump", 2], ["Rainbow", 1], ["Deep Darkness", 1]]
+		plot_a = [["Sugar Baby", 3], ["Red Boomer", 1], ["Plump Pucker", 1]]
+		plot_b = [["Green Lady", 2], ["Dark Plump", 2], ["Rainbow", 1], ["Deep Darkness", 1]]
     @plots = [plot_a, plot_b]
   end
 
@@ -23,14 +23,14 @@ class Farm
 
   def total_number_of_plants
                   # Subtract one from size because name is not a plant
-    plots.reduce(0) { |total, plot| total += (plot.size - 1) }
+    plots.reduce(0) { |total, plot| total += (plot.size) }
   end
 
   def total_plant_heights
     total = 0
     plots.each do |plot|
       # Remove the plot name before iterating over the plants.
-      plot.drop(1).each do |plant|
+      plot.each do |plant|
         total += plant[1]
       end
     end
@@ -48,8 +48,15 @@ class Plant
 end
 
 class Plot
-	attr_reader :plants
-	def initialize(plants)
+	attr_reader :name, :plants
+	def initialize(name, plants)
+		@name = name
 		@plants = plants
 	end
+
+	def total_number_of_plants
+		# Subtract one from size because name is not a plant
+		plants.size
+	end
+
 end
